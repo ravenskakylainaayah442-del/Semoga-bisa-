@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alifa Tailor - Jahitan dengan Sentuhan Personal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Sticky Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo-area">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2L3 7v10l9 5 9-5V7l-9-5zm0 2.18l6.82 3.78L12 11.74 5.18 7.96 12 4.18zM5 9.43l6 3.33v6.81l-6-3.33V9.43zm8 10.14v-6.81l6-3.33v6.81l-6 3.33z"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <h1>ALIFA TAILOR</h1>
+                    <span>Sentuhan Personal</span>
+                </div>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Buka Menu">☰</button>
+            <ul id="navMenu">
+                <li><a href="#beranda" class="nav-link">Beranda</a></li>
+                <li><a href="#layanan" class="nav-link">Layanan</a></li>
+                <li><a href="#galeri" class="nav-link">Hasil Jahitan</a></li>
+                <li><a href="#tentang" class="nav-link">Tentang Kami</a></li>
+                <li><a href="#kontak" class="cta-header">Konsultasi Sekarang</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero">
+        <div class="hero-content">
+            <h2>Jahitan yang Pas, untuk Gaya Anda.</h2>
+            <p>Wujudkan pakaian sesuai kebutuhan dan preferensi Anda melalui layanan penjahitan yang mengutamakan detail dan kenyamanan.</p>
+            <a href="#kontak" class="cta-header hero-cta">Konsultasi Sekarang</a>
+            
+            <div class="badges">
+                <div class="badge-item">
+                    <strong>Personal</strong>
+                    <span>Sesuai Kebutuhan</span>
+                </div>
+                <div class="badge-item">
+                    <strong>Detail</strong>
+                    <span>Fokus Jahitan</span>
+                </div>
+                <div class="badge-item">
+                    <strong>Nyaman</strong>
+                    <span>Untuk Anda</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan Kami -->
+    <section id="layanan">
+        <div class="section-header">
+            <span>Apa yang Bisa Kami Bantu</span>
+            <h3>Layanan Jahit Kami</h3>
+            <p class="section-subtitle">Temukan layanan yang sesuai dengan kebutuhan pakaian Anda. Detail pengerjaan dapat didiskusikan saat konsultasi.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div>
+                    <span class="service-num">01 / PENJAHITAN</span>
+                    <h4>Jahit Pakaian</h4>
+                    <p>Diskusikan model, bahan, dan detail pakaian impian Anda untuk diwujudkan dengan potongan presisi.</p>
+                </div>
+                <button class="service-link" onclick="selectService('Jahit Pakaian')">Diskusikan kebutuhan &rarr;</button>
+            </div>
+
+            <div class="service-card">
+                <div>
+                    <span class="service-num">02 / PENYESUAIAN</span>
+                    <h4>Permak Pakaian</h4>
+                    <p>Penyesuaian ukuran, perbaikan jahitan, atau ubahsuai pakaian agar lebih pas dan nyaman dikenakan.</p>
+                </div>
+                <button class="service-link" onclick="selectService('Permak Pakaian')">Diskusikan kebutuhan &rarr;</button>
+            </div>
+
+            <div class="service-card">
+                <div>
+                    <span class="service-num">03 / KONSULTASI</span>
+                    <h4>Konsultasi Jahitan</h4>
+                    <p>Ceritakan ide atau kebutuhan busana Anda untuk mendiskusikan pilihan bahan dan teknik pengerjaan terbaik.</p>
+                </div>
+                <button class="service-link" onclick="selectService('Konsultasi Jahitan')">Mulai konsultasi &rarr;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Hasil Jahitan -->
+    <section id="galeri" class="gallery-section">
+        <div class="section-header">
+            <span>Inspirasi & Detail</span>
+            <h3>Hasil Jahitan</h3>
+            <p class="section-subtitle">Galeri visual sebagai referensi suasana, detail kain, dan proses penjahitan.</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <span class="gallery-caption">Perhatian pada Detail</span>
+                <img src="images/detail-jas.jpg" alt="Detail jahitan jas dengan list kontras">
+            </div>
+            <div class="gallery-item">
+                <span class="gallery-caption">Proses Penjahitan</span>
+                <img src="images/proses-menjahit.jpg" style="object-position: center 25%;" alt="Proses penjahitan dengan mesin jahit">
+            </div>
+            <div class="gallery-item">
+                <span class="gallery-caption">Inspirasi Gaya</span>
+                <img src="images/koleksi-jas.jpg" alt="Hasil jahitan jas hitam dan abu-abu">
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang">
+        <div class="about-wrapper">
+            <div class="about-grid">
+                <div class="about-img">
+                    <img src="images/tentang-kami.jpg" style="object-position: center 20%;" alt="Suasana Alifa Tailor">
+                </div>
+                <div class="about-text">
+                    <span>Tentang Alifa Tailor</span>
+                    <h3>Berawal dari kebutuhan Anda.</h3>
+                    <p>Alifa Tailor adalah usaha penjahitan tempat Anda dapat mendiskusikan kebutuhan pakaian dan penyesuaian jahitan secara terbuka. Setiap permintaan dapat dibicarakan agar detail yang diinginkan lebih jelas sejak awal.</p>
+                    <div class="quote-box">
+                        "Pakaian yang baik dimulai dari kebutuhan yang dipahami."
+                    </div>
+                    <p class="about-note">Informasi mengenai layanan, bahan, dan estimasi waktu pengerjaan dapat ditanyakan langsung melalui sesi konsultasi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cara Memesan -->
+    <section>
+        <div class="section-header">
+            <span>Mudah Dimulai</span>
+            <h3>Cara Memesan</h3>
+            <p class="section-subtitle">Mulai dengan menyampaikan kebutuhan, lalu diskusikan detailnya sebelum pengerjaan disepakati.</p>
+        </div>
+
+        <div class="steps-container">
+            <div class="step-card">
+                <span class="step-num">01</span>
+                <h4>Ceritakan Kebutuhan Anda</h4>
+                <p>Jelaskan pakaian atau penyesuaian yang Anda butuhkan melalui formulir konsultasi di bawah.</p>
+            </div>
+            <div class="step-card">
+                <span class="step-num">02</span>
+                <h4>Diskusikan Detail Jahitan</h4>
+                <p>Bahas model, ukuran, bahan, dan detail pengerjaan yang diperlukan bersama penjahit.</p>
+            </div>
+            <div class="step-card">
+                <span class="step-num">03</span>
+                <h4>Lanjutkan Proses Jahit</h4>
+                <p>Konfirmasikan kebutuhan dan kesepakatan pengerjaan untuk memulai pembuatan busana.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak & Formulir Konsultasi -->
+    <section id="kontak">
+        <div class="contact-section">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span>Mari Mulai Percakapan</span>
+                    <h3>Diskusikan Kebutuhan Anda.</h3>
+                    <p>Isi formulir berikut untuk mengirimkan permintaan konsultasi awal. Tim kami siap membantu mewujudkan busana ideal Anda.</p>
+                    
+                    <div class="info-item">
+                        <strong>Lokasi:</strong>
+                        <span>Pasar Sunan Giri, Rawamangun, Jakarta Timur</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Telepon / WhatsApp:</strong>
+                        <span>0813-8906-9532</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Instagram / TikTok:</strong>
+                        <span>@alifa.tailor / @alifa_tailor</span>
+                    </div>
+                </div>
+
+                <div>
+                    <form id="consultForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" id="nama" class="form-control" placeholder="Nama Anda" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="kontakUser">Nomor HP / Email</label>
+                            <input type="text" id="kontakUser" class="form-control" placeholder="Nomor HP atau email yang bisa dihubungi" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="jenisKebutuhan">Jenis Kebutuhan</label>
+                            <select id="jenisKebutuhan" class="form-control" required>
+                                <option value="" disabled selected>Pilih kebutuhan layanan</option>
+                                <option value="Jahit Pakaian">Jahit Pakaian</option>
+                                <option value="Permak Pakaian">Permak Pakaian</option>
+                                <option value="Konsultasi Jahitan">Konsultasi Jahitan</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pesan">Ceritakan Kebutuhan Anda</label>
+                            <textarea id="pesan" class="form-control" placeholder="Ceritakan model, ukuran, atau detail yang diinginkan..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Kirim Permintaan Konsultasi</button>
+                    </form>
+
+                    <!-- Ringkasan Hasil Submit -->
+                    <div id="summaryCard" class="summary-card">
+                        <h4>Ringkasan Permintaan Konsultasi</h4>
+                        <p><strong>Nama:</strong> <span id="sumNama"></span></p>
+                        <p><strong>Kontak:</strong> <span id="sumKontak"></span></p>
+                        <p><strong>Layanan:</strong> <span id="sumLayanan"></span></p>
+                        <p><strong>Catatan:</strong> <span id="sumPesan"></span></p>
+                        <p class="summary-note">* Prototype demonstrasi: Data telah dicatat secara lokal. Silakan hubungi nomor WhatsApp resmi untuk konfirmasi langsung.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Back to Top -->
+    <a href="#beranda" class="back-to-top" title="Kembali ke atas">&#8593;</a>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Alifa Tailor Prototype UI/UX. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
