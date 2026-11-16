@@ -91,7 +91,6 @@ header {
     align-items: center;
 }
 
-/* Teks menu selalu putih (tidak biru/ungu) */
 #navMenu a.nav-link,
 #navMenu a.nav-link:visited {
     color: #ffffff;
@@ -104,7 +103,6 @@ header {
     color: var(--champagne);
 }
 
-/* Tombol Konsultasi tetap burgundy di atas champagne */
 #navMenu a.cta-header,
 #navMenu a.cta-header:visited {
     color: var(--burgundy-deep);
@@ -508,10 +506,15 @@ textarea.form-control {
     min-height: 120px;
 }
 
-.btn-submit {
-    background-color: var(--champagne);
-    color: var(--burgundy-deep);
-    border: none;
+/* Styling Grup Tombol Aksi (WhatsApp, TikTok, Instagram) */
+.action-buttons-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.btn-action {
     width: 100%;
     padding: 1rem;
     font-weight: 700;
@@ -519,15 +522,34 @@ textarea.form-control {
     cursor: pointer;
     font-size: 1rem;
     letter-spacing: 0.5px;
-    transition: opacity 0.3s, transform 0.2s;
+    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;
+    transition: opacity 0.3s, transform 0.2s, background 0.3s;
+    border: 1px solid var(--champagne);
 }
 
-.btn-submit:hover {
+.btn-action:hover {
     opacity: 0.92;
     transform: translateY(-2px);
+}
+
+.btn-wa {
+    background-color: var(--champagne);
+    color: var(--burgundy-deep);
+    border: none;
+}
+
+.btn-tiktok {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--cream);
+}
+
+.btn-ig {
+    background-color: rgba(131, 58, 180, 0.35);
+    color: var(--cream);
 }
 
 /* Summary Result Card */
